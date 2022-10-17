@@ -3,6 +3,7 @@ import './styles/App.scss'
 import Inputs from './components/Inputs'
 import Buttons from './components/Buttons'
 import baseConvert from './js/converterFun'
+import {CgCopy} from 'react-icons/cg'
 
 
 const valided = ["0", "1","2","3","4","5","6","7","8","9","A","B" , "C" , "D" , "E" ,"F"]
@@ -71,7 +72,7 @@ function App() {
         <textarea name="answer" id="output" cols="30" rows="10" ref={outputRef} readOnly={true}></textarea>
         <button id='copy' onClick={()=>{
           copyOutput(outputRef.current);
-        }}>Copy</button>
+        }}>Copy<CgCopy /></button>
       </div>
     </div>
   )

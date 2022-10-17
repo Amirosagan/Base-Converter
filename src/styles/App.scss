@@ -40,6 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  svg {
+    margin-left: 5px;
+
+    path{
+    stroke: whitesmoke;
+    
+  }
+}
+  align-items: center;
+
+}
 
 .App {
   display: flex;
